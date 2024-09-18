@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videó Galéria</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .video-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 50px 0;
+            padding: 30px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .video-text {
+            width: 45%;
+            padding: 20px;
+            font-size: 1.2em;
+            color: #555;
+        }
+
+        .video {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            width: 45%;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .video iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Váltakozó bal/jobb igazítás */
+        .video-section:nth-child(odd) {
+            flex-direction: row;
+        }
+
+        .video-section:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        /* Háttérszínek a vizuális elkülönítéshez */
+        .video-section:nth-child(odd) {
+            background-color: #f9f9f9;
+        }
+
+        .video-section:nth-child(even) {
+            background-color: #eaeaea;
+        }
+
+        @media (max-width: 768px) {
+            .video-section {
+                flex-direction: column;
+            }
+
+            .video-text, .video {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Tech4Study</h1>
+
+        <div class="video-section">
+            <div class="video-text">
+                Jágri Ilona: Tech4Study - céges összefogás az oktatásért
+
+            </div>
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/0lhw11tH7bM" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div class="video-section">
+            <div class="video-text">
+                Digital Pedro Felvételi követelmények?
+            </div>
+            <div class="video">
+                <iframe src="https://www.tiktok.com/embed/v2/7180333334361345285" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div class="video-section">
+            <div class="video-text">
+                I. Technológiai Intelligencia Konferencia Mátészalkán
+            </div>
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/Ye0LYf0jI7E" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div class="video-section">
+            <div class="video-text">
+                Mesterséges intelligencia Mátészalkán
+            </div>
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/CJFg4vbYh8U" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
