@@ -1,139 +1,95 @@
-<!DOCTYPE html>
-<html lang="hu">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tech4Study</title>
-    <link rel="icon" type="image/x-icon" href="600.jfif">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"/>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 50px auto;
-            padding: 20px;
-            background-color: #fff;
-        }
-
-        h1 {
-            text-align: center;
-            color: #333;
-        }
-
-        .video-section {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin: 50px 0;
-            padding: 30px;
-            background-color: #fff;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-            overflow: hidden;
-        }
-
-        .video-text {
-            width: 45%;
-            padding: 20px;
-            font-size: 1.2em;
-            color: #555;
-        }
-
-        .video {
-            position: relative;
-            padding-bottom: 56.25%;
-            height: 0;
-            width: 45%;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        .video iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-
-        /* Váltakozó bal/jobb igazítás */
-        .video-section:nth-child(odd) {
-            flex-direction: row;
-        }
-
-        .video-section:nth-child(even) {
-            flex-direction: row-reverse;
-        }
-
-        /* Háttérszínek a vizuális elkülönítéshez */
-        .video-section:nth-child(odd) {
-            background-color: #f9f9f9;
-        }
-
-        .video-section:nth-child(even) {
-            background-color: #eaeaea;
-        }
-
-        @media (max-width: 768px) {
-            .video-section {
-                flex-direction: column;
-            }
-
-            .video-text, .video {
-                width: 100%;
-            }
+        .backdrop {
+            backdrop-filter: blur(5px);
         }
     </style>
 </head>
-<body>
-
-    <div class="container">
-        <h1>Tech4Study</h1>
-
-        <div class="video-section">
-            <div class="video-text">
-                Jágri Ilona: Tech4Study - céges összefogás az oktatásért
-
-            </div>
-            <div class="video">
-                <iframe src="https://www.youtube.com/embed/0lhw11tH7bM" frameborder="0" allowfullscreen></iframe>
-            </div>
-        </div>
-
-        <div class="video-section">
-            <div class="video-text">
-                Digital Pedro Felvételi követelmények?
-            </div>
-            <div class="video">
-                <iframe src="https://www.tiktok.com/embed/v2/7180333334361345285" frameborder="0" allowfullscreen></iframe>
-            </div>
-        </div>
-
-        <div class="video-section">
-            <div class="video-text">
-                I. Technológiai Intelligencia Konferencia Mátészalkán
-            </div>
-            <div class="video">
-                <iframe src="https://www.youtube.com/embed/Ye0LYf0jI7E" frameborder="0" allowfullscreen></iframe>
-            </div>
-        </div>
-
-        <div class="video-section">
-            <div class="video-text">
-                Mesterséges intelligencia Mátészalkán
-            </div>
-            <div class="video">
-                <iframe src="https://www.youtube.com/embed/CJFg4vbYh8U" frameborder="0" allowfullscreen></iframe>
-            </div>
-        </div>
-
+<body class="bg-gray-100 font-montserrat flex flex-col min-h-screen">
+    <div class="backdrop bg-white bg-opacity-50 text-[#CAD748] p-4 fixed w-full top-0 z-50">
+        <h1 class="text-center text-2xl">Konferencia</h1>
     </div>
+    <div class="pt-16"> 
+        <div class="p-4 flex justify-center">
+            <img alt="Kép" class="rounded" height="500" src="" width="500"/>
+        </div>
+        <div class="bg-[#CAD748] p-4">
+            <div class="bg-white p-4 rounded border border-gray-300 flex flex-col md:flex-row justify-around space-x-0 md:space-x-4">
+                <a href="https://digisulim.hu/" class="bg-[#CAD748] text-[#53519E] py-4 px-2 rounded-lg w-full md:w-1/5 font-bold text-center hover:bg-[#53519E] hover:text-[#CAD748]">
+                    DIGISULIM
+                </a>
+                <a href="https://robiihun.github.io/Tech4Study-2024/#" class="bg-[#CAD748] text-[#53519E] py-4 px-2 rounded-lg w-full md:w-1/5 font-bold text-center hover:bg-[#53519E] hover:text-[#CAD748]">
+                    Tech4Study
+                </a>
+                <a href="https://sites.google.com/view/online-cv-10b" class="bg-[#CAD748] text-[#53519E] py-4 px-2 rounded-lg w-full md:w-1/5 font-bold text-center hover:bg-[#53519E] hover:text-[#CAD748]">
+                    LS4VET
+                </a>
+                <a href="https://sites.google.com/view/dth2023essentials" class="bg-[#CAD748] text-[#53519E] py-4 px-2 rounded-lg w-full md:w-1/5 font-bold text-center hover:bg-[#53519E] hover:text-[#CAD748]">
+                    DIGIHÉT
+                </a>
+                <a href="https://itmp.hu/" class="bg-[#CAD748] text-[#53519E] py-4 px-2 rounded-lg w-full md:w-1/5 font-bold text-center hover:bg-[#53519E] hover:text-[#CAD748]">
+                    ITMP KLUB
+                </a>
+            </div>
+        </div>
 
+        <div class="p-4 flex justify-center">
+            <img alt="Kép" class="rounded" height="919" src="kep1.png" width="1300"/>
+        </div>
+        <div class="bg-[#CAD748] text-white p-4">
+            <h2 class="text-center text-xl">ELŐZMÉNYEK</h2>
+        </div>
+        <div class="p-6 flex-grow">
+            <p class="font-bold">NI - MentorProgram</p>
+            <p>(2012) -> Robotika nyári tábor (JI résztvevő) -> Mentor Program (iskolai eszköztámogatás, szakemberek, ITanár oktatás (LabView), versenyek, kiállítások, rendezvények előadói, ...) -> Iskolai Nyári Robotika Táborok (JI szervező)</p>
+            
+            <p class="font-bold mt-4">CÉGES, CIVIL PÁLYÁZATOK</p>
+            <ul class="list-disc list-inside">
+                <li>nevezés FLL-re (3 éven át)</li>
+                <li>eszközökre, berendezésre (helyi ROTARY Club) -> Robotika Alkotóműhely</li>
+                <li>FLL terepasztal (asztalos üzem, helyi társiskola)</li>
+                <li>termékek (Túró rudi, Nobilis finomságai) -> Túró rudi automata v1, v2, v3, Nobilis automatizált üzletlánc</li>
+                <li>STARTUP SAFARY-k (élő, online) -> rengeteg információ/motiváció -> diák állásajánlatok</li>
+            </ul>
+            
+            <p class="font-bold mt-4">IOK</p>
+            <p>információk, jóminták, kapcsolatok (nagyon barátságos webes megoldással!) -> <span class="font-bold">Csudutov Csudinka</span></p>
+            
+            <p class="font-bold mt-4">ITMP KLUB tanártovábbképzései (<span class="font-bold">GreenFox</span>)</p>
+            <p>tananyag + módszertan + mintavizsgák + közösség!</p>
+            
+            <p class="font-bold mt-4">Fogadj örökbe egy informatikust!</p>
+            <ul class="list-disc list-inside">
+                <li>Egy napom a Logmein szoftverfejlesztő cégnél (pedagógus napon)</li>
+                <li>3 napos közös projekt a mi cégünkkel 15 diákkal (részben online meeting, webes adatbáziskezelés: GITHUB, AZURE)</li>
+            </ul>
+        </div>
+        <div class="bg-gray-200 p-4"></div>
+        <a href="https://"
+        class="w-full bg-[#CAD748] text-white py-2 px-4 rounded text-center block hover:text-[#53519E]">
+        "EleQtRooM - Nyitott STEAMmela világra!" Alapítvány
+     </a>
+     
+        </div>
+        <div class="p-4 flex justify-around">
+            <img alt="3" class="rounded" height="200" src="" width="200"/>
+            <img alt="Kép" class="rounded" height="200" src="" width="200"/>
+            <img alt="Egymás mellett" class="rounded" height="200" src="" width="200"/>
+        </div>
+        <div class="p-4">
+
+            <iframe src="https://linktr.ee/eleqtroom?utm_source=linktree_profile_share&ltsid=f70fa119-969e-404d-9136-7949f69b5a2c" class="w-full h-96 border-0"></iframe>
+        </div>
+        <div class="bg-gray-200 p-4">
+            <a href="https://" class="w-full bg-[#CAD748] text-white py-2 px-4 rounded text-center block">Konferencia Támogató oldal</a>
+        </div>
+        <div class="p-4 flex justify-center">
+            <img alt="Kép" class="rounded" height="500" src="" width="500"/>
+        </div>
+    </div>
 </body>
 </html>
